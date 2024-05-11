@@ -36,7 +36,7 @@ def get_stock_values(stocks):
 
     for stock in stocks:
         url = "https://finance.yahoo.com/quote/" + stock["Ticker"]
-        xpath = "//*[@id='nimbus-app']/section/section/section/article/section[1]/div[2]/div[1]/section/div/section/div[1]/fin-streamer[1]/span"
+        xpath = "//*[@class='livePrice svelte-mgkamr']"
         driver.get(url)
 
         time.sleep(3)
